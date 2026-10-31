@@ -52,8 +52,8 @@ yx::Result<bool> send_notification(const std::string& message)
   }
 
   if (*has_notify_send) {
-    return platform::run_process_blocking(
-        {"notify-send", std::string(constants::app_name), message});
+    return platform::run_process_blocking({"notify-send", "-a", std::string(constants::app_name),
+                                           std::string(constants::app_name), message});
   }
 
   return yx::ok(false);
