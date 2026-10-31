@@ -1,5 +1,10 @@
 # asryx
 
+> **Fork notice:** Personal fork of [rccyx/asryx](https://github.com/rccyx/asryx) with small tweaks for my own setup.
+> Changes compared to upstream:
+> - whisper.cpp bumped to `d1be6fd`
+> - Desktop notifications set the app name (`notify-send -a`)
+
 <p align="center">
   <a href="./assets/demo.gif">
     <img src="./assets/demo.gif" alt="asryx demo" width="100%">
